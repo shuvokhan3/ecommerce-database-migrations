@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 
-class DemoController extends Controller
+class QueryController extends Controller
 {
 
 

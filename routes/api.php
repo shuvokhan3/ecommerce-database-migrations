@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DemoController;
+use App\Http\Controllers\QueryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //...................Model..................
-Route::post('/DemoModelActon',[DemoController::class,' DemoModelActon']);
+Route::post('/DemoModelActon',[QueryController::class,' DemoModelActon']);
 
 
 

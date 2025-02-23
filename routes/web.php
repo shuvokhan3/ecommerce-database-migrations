@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DemoController;
+use App\Http\Controllers\QueryController;
 use App\Http\Controllers\modelController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,20 +19,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/products',[DemoController::class,'ProductController']);
-Route::get('/singleProduct/{id}',[DemoController::class,'singleProduct']);
-Route::get('/productPrice',[DemoController::class,'productPrice']);
+Route::get('/products',[QueryController::class,'ProductController']);
+Route::get('/singleProduct/{id}',[QueryController::class,'singleProduct']);
+Route::get('/productPrice',[QueryController::class,'productPrice']);
 
 
-Route::get('/calculatePrice',[DemoController::class,'calculatePrice']);
+Route::get('/calculatePrice',[QueryController::class,'calculatePrice']);
 
-Route::get('/selectProduct',[DemoController::class, 'selectProduct']);
-Route::get('/InnerJoin',[DemoController::class, 'innerJoin']);
-Route::get('/LeftRightJoin',[DemoController::class, 'LeftRightJoin']);
-Route::get('/crossjoin',[DemoController::class, 'crossjoin']);
-Route::get('/advancedJoin',[DemoController::class, 'advancedJoin']);
+Route::get('/selectProduct',[QueryController::class, 'selectProduct']);
+Route::get('/InnerJoin',[QueryController::class, 'innerJoin']);
+Route::get('/LeftRightJoin',[QueryController::class, 'LeftRightJoin']);
+Route::get('/crossjoin',[QueryController::class, 'crossjoin']);
+Route::get('/advancedJoin',[QueryController::class, 'advancedJoin']);
 
-Route::get('/unionQuery',[DemoController::class, 'unionQuery']);
+Route::get('/unionQuery',[QueryController::class, 'unionQuery']);
 
 
 //...................Model..................
